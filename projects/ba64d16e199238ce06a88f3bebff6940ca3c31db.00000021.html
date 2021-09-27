@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>project-3-a-web-page-that-speaks</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <style>
+  img {
+  border: 2px solid #CCC;
+  margin: 2em !important;
+  }
+  body {
+  padding: 5em 1em !important;
+  }
+  </style>
+  <style type="text/css">
+  .lst-kix_hfv4lcz0syhs-2>li{counter-increment:lst-ctn-kix_hfv4lcz0syhs-2}ol.lst-kix_hfv4lcz0syhs-5.start{counter-reset:lst-ctn-kix_hfv4lcz0syhs-5 0}.lst-kix_hfv4lcz0syhs-5>li{counter-increment:lst-ctn-kix_hfv4lcz0syhs-5}ol.lst-kix_hfv4lcz0syhs-0.start{counter-reset:lst-ctn-kix_hfv4lcz0syhs-0 0}ol.lst-kix_hfv4lcz0syhs-3.start{counter-reset:lst-ctn-kix_hfv4lcz0syhs-3 0}.lst-kix_hfv4lcz0syhs-8>li{counter-increment:lst-ctn-kix_hfv4lcz0syhs-8}ol.lst-kix_hfv4lcz0syhs-8.start{counter-reset:lst-ctn-kix_hfv4lcz0syhs-8 0}.lst-kix_hfv4lcz0syhs-0>li:before{content:"" counter(lst-ctn-kix_hfv4lcz0syhs-0,decimal) ". "}ol.lst-kix_hfv4lcz0syhs-2.start{counter-reset:lst-ctn-kix_hfv4lcz0syhs-2 0}ol.lst-kix_hfv4lcz0syhs-7.start{counter-reset:lst-ctn-kix_hfv4lcz0syhs-7 0}.lst-kix_hfv4lcz0syhs-1>li:before{content:"" counter(lst-ctn-kix_hfv4lcz0syhs-1,lower-latin) ". "}.lst-kix_hfv4lcz0syhs-8>li:before{content:"" counter(lst-ctn-kix_hfv4lcz0syhs-8,lower-roman) ". "}ol.lst-kix_hfv4lcz0syhs-4.start{counter-reset:lst-ctn-kix_hfv4lcz0syhs-4 0}.lst-kix_hfv4lcz0syhs-5>li:before{content:"" counter(lst-ctn-kix_hfv4lcz0syhs-5,lower-roman) ". "}.lst-kix_hfv4lcz0syhs-4>li:before{content:"" counter(lst-ctn-kix_hfv4lcz0syhs-4,lower-latin) ". "}.lst-kix_hfv4lcz0syhs-6>li{counter-increment:lst-ctn-kix_hfv4lcz0syhs-6}.lst-kix_hfv4lcz0syhs-0>li{counter-increment:lst-ctn-kix_hfv4lcz0syhs-0}.lst-kix_hfv4lcz0syhs-2>li:before{content:"" counter(lst-ctn-kix_hfv4lcz0syhs-2,lower-roman) ". "}.lst-kix_hfv4lcz0syhs-3>li:before{content:"" counter(lst-ctn-kix_hfv4lcz0syhs-3,decimal) ". "}.lst-kix_hfv4lcz0syhs-3>li{counter-increment:lst-ctn-kix_hfv4lcz0syhs-3}ol.lst-kix_hfv4lcz0syhs-5{list-style-type:none}ol.lst-kix_hfv4lcz0syhs-6{list-style-type:none}ol.lst-kix_hfv4lcz0syhs-7{list-style-type:none}.lst-kix_hfv4lcz0syhs-4>li{counter-increment:lst-ctn-kix_hfv4lcz0syhs-4}ol.lst-kix_hfv4lcz0syhs-8{list-style-type:none}.lst-kix_hfv4lcz0syhs-1>li{counter-increment:lst-ctn-kix_hfv4lcz0syhs-1}ol.lst-kix_hfv4lcz0syhs-6.start{counter-reset:lst-ctn-kix_hfv4lcz0syhs-6 0}ol.lst-kix_hfv4lcz0syhs-0{list-style-type:none}ol.lst-kix_hfv4lcz0syhs-1{list-style-type:none}.lst-kix_hfv4lcz0syhs-6>li:before{content:"" counter(lst-ctn-kix_hfv4lcz0syhs-6,decimal) ". "}ol.lst-kix_hfv4lcz0syhs-2{list-style-type:none}ol.lst-kix_hfv4lcz0syhs-1.start{counter-reset:lst-ctn-kix_hfv4lcz0syhs-1 0}ol.lst-kix_hfv4lcz0syhs-3{list-style-type:none}.lst-kix_hfv4lcz0syhs-7>li:before{content:"" counter(lst-ctn-kix_hfv4lcz0syhs-7,lower-latin) ". "}.lst-kix_hfv4lcz0syhs-7>li{counter-increment:lst-ctn-kix_hfv4lcz0syhs-7}ol.lst-kix_hfv4lcz0syhs-4{list-style-type:none}ol{margin:0;padding:0}table td,table th{padding:0}.c12{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c3{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Courier New";font-style:normal}.c0{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c8{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:20pt;font-family:"Arial";font-style:normal}.c9{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:16pt;font-family:"Arial";font-style:normal}.c1{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c5{padding-top:18pt;padding-bottom:6pt;line-height:1.15;page-break-after:avoid;text-align:left}.c16{padding-top:20pt;padding-bottom:6pt;line-height:1.15;page-break-after:avoid;text-align:left}.c13{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c7{margin-left:36pt;padding-left:0pt}.c11{font-weight:400;font-family:"Courier New"}.c4{color:inherit;text-decoration:inherit}.c6{color:#1155cc;text-decoration:underline}.c14{padding:0;margin:0}.c2{height:11pt}.c15{color:#ff0000}.c10{font-style:italic}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}
+  </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <a href="/">Home</a>:: <a href="/syllabus.html">Syllabus</a>
+    </ul>
+  </div>
+  <div class="maincontent">
+    <h1 class="c16" id="h.v3f8ggehftg6"><span class="c8">Project 3: &#160;A Web Page That Speaks</span></h1>
+    <p class="c1"><span class="c10">Due: &#160;Thursday, September, 21st &#160;*</span><span class="c10 c15">in class</span><span class="c10">*</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>In this project, you will build a web browser extension that will allow users to point at or select content and have it read aloud to them. They will also be able to have the content read to them word by word. It will be our first experience with a project that isn&#8217;t about making content accessible directly, but rather about building something that changes existing content to make it more accessible. In other words, this will be your first access technology!<br>
+    <br>
+    The final output of this project will be an browser extension for the Chrome web browser, which you will turn in and demonstrate in class. Here&#8217;s a video of some existing</span> <span class="c6">Chrome extensions for Speech Synthesis</span><span class="c0">.</span></p>
+    <p class="c1"><span><br>
+    <br>
+    Jeff recorded and posed a</span><span class="c6">&#160;video of himself demonstrating how to generate speech from the web</span><span class="c0">&#160;browser, a bit about using Javascript and jQuery, and how to package all of that into a Chrome extension.</span></p>
+    <h2 class="c5" id="h.ineas5yk5ero"><span class="c9">Chrome Extensions</span></h2>
+    <p class="c1"><span>Web browser extensions (and, plugins) have long been used as a way to give the web new features, and to make it more accessible. Browser extensions are small bits of code that are run within the context of the web browser, allowing them to interact and change web pages. Long ago, these needed to be written in languages like C++ because they really extended the code of the web browser executable. That all changed with with the introduction of Greasemonkey, a plugin that allowed users to provide short &#8220;content scripts&#8221; written in Javascript that would be applied to specified web pages that were loaded by the web browser. As Javascript has become more powerful, so have the extensions written for web browsers that use it. For example, ChromeVox, which turns your web browser into something like a screen reader is written primarily in Javascript.<br>
+    <br>
+    Each popular web browser has a slightly different way of building extensions for them. We&#8217;ll be writing an</span> <span class="c6">extension for the Chrome web browser</span><span class="c0">. Specifically, you&#8217;ll be writing what&#8217;s called a content script, which is really similar to a Greasemonkey script.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h2 class="c5" id="h.9dam8wphfopg"><span class="c9">Content Scripts</span></h2>
+    <p class="c1"><span class="c0">Content scripts in the world of Chrome extensions are somewhat like the Greasemoney scripts of yore. That is they are Javascript scripts that are inserted into specified web pages, which then run in the context of those web pages. The core of a content script extension is still Javascript, but there&#8217;s a little more structure that allows for more complicated content scripts.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 217.01px; height: 252.50px;"><img alt="" src="https://lh4.googleusercontent.com/PwfLRztMCfL2qhI99MlYqUw6dacPAEBOH1O50msGpfgklpvqHyC0XO3M5NyMhSQS2WTEuHNnRW_CrFtxJU84MlPBVkbiXIHJsC9aAW4QZAZqpruzBflvhMkRD7GU11VgIw" style="width: 217.01px; height: 252.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+    <p class="c1"><span>You should first create a directory for your extension, and then add a folder called scripts, and a folder called css. In the scripts folder, add a blank text file named reader.js and include a copy of</span> <span class="c6">JQuery</span><span class="c0">. In the css folder include a blank text file named reader.css.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>Now add a manifest.json file to the main directory, and include the following text into it, which specifies various metadata about your extensions,</span> <span class="c10">e.g.,</span><span>&#160;its name, the files included in it, etc. For now, the extension is set to only be included on pages on the course homepage. That&#8217;s probably good for now, as you might not want it to always be there!</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c3">{</span></p>
+    <p class="c1"><span class="c3">&#160; "manifest_version": 2,</span></p>
+    <p class="c1"><span class="c3">&#160; "name": "Access Reader",</span></p>
+    <p class="c1"><span class="c3">&#160; "minimum_chrome_version": "24.0.1307.0",</span></p>
+    <p class="c1"><span class="c3">&#160; "version": "0.0.1",</span></p>
+    <p class="c1"><span class="c3">&#160; "homepage_url": "http://accessibilitycourse.com",</span></p>
+    <p class="c1"><span class="c3">&#160; "icons": {</span></p>
+    <p class="c1"><span class="c3">&#160; },</span></p>
+    <p class="c1"><span class="c3">&#160; "content_scripts": [</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; {</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; "matches": [</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; &#160; "http://accessibilitycourse.com/*"</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; ],</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; "js": [</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; &#160; &#160; "scripts/jquery.min.js",</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; &#160; &#160; "scripts/reader.js"</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; ],</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; "css": ["css/reader.css"],</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; "run_at": "document_idle"</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; }</span></p>
+    <p class="c1"><span class="c3">&#160; ]</span></p>
+    <p class="c1"><span class="c3">}</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>At this point, I would recommend installing your extension into your browser. To do that, type</span> <span class="c11">chrome://extensions</span><span>&#160;into the address bar of the browser. Then click &#8220;Load Unpacked Extension,&#8221; and choose the directory of the extension that you are creating. At that point, assuming everything worked and you didn&#8217;t get any errors, you should see an entry for a new Chrome extension named Access Reader:<br></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 201.33px;"><img alt="" src="https://lh4.googleusercontent.com/g4NMzqSYnTsz86dSzUGIM0vHpqtlmckYpygax7JVzUzA1IpZmEemMUdObNSQsv360DOMmh4-nT_MLIvJXaLUcvaQq98EdLybfw68gMQUlwJ05Vq5qFnLj2O70JUR2zPvsA" style="width: 624.00px; height: 201.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h2 class="c5" id="h.hhaovpe1r2zr"><span class="c9">Making Your Extension Do Something</span></h2>
+    <p class="c1"><span class="c0">At this point, what you have is the basic shell of an extension. Now it&#8217;s time to make it actually do something. In our case, we&#8217;re going to make your extension highlight the content under the mouse, and speak what&#8217;s there if you press the spacebar. Fortunately, your browser has a lot of great functionality built-in that makes this much more straightforward than it used to be to do!</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>The main file that you&#8217;re going to edit is the reader.js file located in the scripts folder of your extension. First, let&#8217;s test that you&#8217;re able to get it to do</span> <span class="c10">something</span><span>, and in the process explore one helpful way of debugging your extension.<br>
+    <br>
+    First, try putting just the text</span> <span class="c11">console.log(&#8220;Accessibility rocks!&#8221;);</span><span class="c0">&#160;in the reader.js file. To see if this worked, takes a few steps:<br></span></p>
+    <ol class="c14 lst-kix_hfv4lcz0syhs-0 start" start="1">
+      <li class="c1 c7"><span class="c0">Save the file</span></li>
+      <li class="c1 c7"><span class="c0">Reload the extension (go back to the chrome://extensions address, find the Access Reader extension, and then press &#8220;Reload&#8221;)</span></li>
+      <li class="c1 c7"><span>Next, visit</span> <span class="c6"><a class="c4" href="/">http://accessibilitycourse.com</a></span></li>
+      <li class="c1 c7"><span class="c0">Open up the develop console. One way to do this is to right click on the web page, and choose &#8220;Inspect Element.&#8221; Then go to the Console tab.</span></li>
+      <li class="c1 c7"><span class="c0">Reload the page.</span></li>
+    </ol>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>If everything works, you should see &#8220;Accessibility rocks!&#8221; written on the console tab. Yay!<br>
+    <br>
+    Now, let&#8217;s make your web page do something even more useful than spreading the good word about how accessibility rocks.<br>
+    <br>
+    Go back to reader.js. We need to edit this so that we can be sure the web page has fully loaded before we start editing it. This is mostly taken care of us for content scripts, but it&#8217;s a little unclear whether all of our extension content has been loaded before scripts are run, so we&#8217;ll use our first bit of JQuery to ensure that the page is ready for our script.<br>
+    <br>
+    Add the following to reader.js:<br>
+    <br></span> <span class="c3">$(document).ready(function() {<br>
+    <br>
+    }</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Anything that appears between the curly braces will not be run until the whole web page has loaded. One thing we need to do once the page has loaded is tell all the elements on the page to let us know when the user mouses over them. We can do this by putting the following JQuery within the code that will be executed when the page loads.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c3">$("*:not(body)").hover(</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; function (ev) {</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; &#8230; EXECUTED WHEN MOUSE ENTERS AN ELEMENT &#8230;</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; },</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; function (ev) {</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#160; &#8230;&#160;EXECUTED WHEN MOUSE LEAVES ELEMENT &#8230;</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; }</span></p>
+    <p class="c1"><span class="c3">&#160;);</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span class="c0">The previous code says for all the DOM elements on the page, except the body, attach this hover event to them. It&#8217;ll call the first function when the mouse hovers over an element, and it calls the second function when the mouse stops hovering over an element. That might be a good clue for you -- we want to highlight a DOM element when the mouse is over it, and we want to stop highlighting it when the mouse stops being over it. This is where we should do that.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>So, how do you highlight something? If you remember back to our slides on the web, something like highlighting would be included under style or presentation, and that means it&#8217;s a kind of CSS. You might remember we have a CSS file in our template extension. So, one way to highlight an element is to define a CSS class that would add an outline to it. The CSS for something like that would look like:<br>
+    <br></span> <span class="c3">.highlight {</span></p>
+    <p class="c1"><span class="c3">&#160; outline: 3px solid red;</span></p>
+    <p class="c1"><span class="c3">}</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>If you put that in the reader.css file we created, that class will be available to the web page that our content script is added to. That means that if you add the class to an element, it will have a red outline. Adding a class in HTML looks like,</span> <span class="c11">&lt;p class=&#8221;highlight&#8221;&gt;</span><span>, but how do you do that from Javascript?<br>
+    <br>
+    JQeury makes it pretty easy. Here&#8217;s the code to add a class to an element:<br></span><span class="c3">$(&#8220;#elementselector&#8221;).addClass('highlight)</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span>And, then to remove a class, you call the analogous:<br></span><span class="c3">$(&#8220;elementselector&#8221;).removeClass('highlight)</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span>One trick that might not be obvious is that in the context of the event handler functions above, you can refer to the element that the event was called on using</span> <span class="c11">$(this)</span><span class="c0">.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>Once you add the lines above to the event handler functions, try it out. What do you get? &#160;One thing you might notice is that multiple outlines are sometimes produced. This is because of the way the DOM works, your mouse can be above multiple elements. You probably only want the first element to trigger the outline, which you can do by adding the following to the end of the first event handler:<br>
+    <br></span> <span class="c11">ev.stopPropagation();</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>You can</span> <span class="c6">read more about event models</span><span>, and why stopping an event&#8217;s propagation would have the effect you want, but just adding it in there should do the trick. You might find you also need to erase some errant leftover highlights. You can do that easily by finding all the elements with the highlight class and removing the class from them:<br>
+    <br></span> <span class="c3">$(".highlight").removeClass('highlight&#8217;)</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <h2 class="c5" id="h.2l3jfa6iacak"><span class="c9">Adding Speech</span></h2>
+    <p class="c1"><span class="c0">The next thing to do is to make the content of the highlight node speak!</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>It turns out that in modern web browsers, it&#8217;s very easy to produce speech. The following code will speak whatever string you provide:<br>
+    <br></span> <span class="c3">speechSynthesis.speak(new SpeechSynthesisUtterance(text));</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span class="c0">Equivalently, you can stop all the speech synthesis by calling:</span></p>
+    <p class="c1"><span class="c3">speechSynthesis.cancel();</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span>If you have a DOM element, JQuery will let you get a text version of the element with the following call:<br></span><span class="c3">$(&#8220;#elementselector&#8221;).text();</span></p>
+    <p class="c1"><span class="c0">At this point, you should be able to move your mouse around and your web browser will speak whatever is under the mouse cursor.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h2 class="c5" id="h.6ptchmf4fskl"><span class="c9">Speaking Only When Requested</span></h2>
+    <p class="c1"><span>Depending on your needs, it could be annoying to always have to hear the content read as the mouse cursor is moved around. In this step, we&#8217;ll make it so the content is only spoken if the user presses the spacebar.<br>
+    <br>
+    You can press a &#8220;key handler&#8221; to the keydown event using the following code:<br></span><span class="c3">$(document).keydown(function(ev) {</span></p>
+    <p class="c1"><span class="c3">&#160; if (e.keyCode == 0 || e.keyCode == 32) {</span></p>
+    <p class="c1"><span class="c3">&#160; &#160; &#8230;WHATEVER CODE YOU WANT TO RUN ON SPACEBAR GOES HERE&#8230;</span></p>
+    <p class="c1"><span class="c3">&#160; }</span></p>
+    <p class="c1"><span class="c3">}</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span class="c0">As in the previous example, you should include this code within the document ready block, to make sure that it is run after the web page has properly loaded.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>When you&#8217;re done with this step, your extension should highlight elements whenever the mouse is moved, but only speak them if you press the spacebar.<br>
+    <br>
+    You will likely notice that the web page will move when you press the spacebar. This is because in addition to your event, the spacebar moves the page down by default in the browser. You can prevent it from doing this by telling the event to stop &#8220;bubbling up&#8221; after it has triggered your response. Here&#8217;s a</span> <span class="c6">StackOverflow Article on stopping it</span><span class="c0">.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h2 class="c5" id="h.wdwgkuhs71dw"><span class="c9">Speaking More Than Text</span></h2>
+    <p class="c1"><span class="c0">In this final section, you&#8217;ll detect if the element that the extension is attempting to read is an image, and if so you&#8217;ll read either the alt text (if available) or the filename (if alt text is not available).</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>To accomplish this, you&#8217;ll need to know what kind of element you&#8217;re working with, you&#8217;ll need to know if the alt text is there, and how to access it. Those tasks can be accomplished as follows:<br>
+    <br></span> <span class="c11">v</span><span class="c3">ar tagname = this.tagName;</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span class="c3">&#8230;</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span class="c3">if ($(this).attr('href')) {</span></p>
+    <p class="c1"><span class="c3">&#160; // href is not blank</span></p>
+    <p class="c1"><span class="c3">} else {</span></p>
+    <p class="c1"><span class="c3">&#160; // href is blank</span></p>
+    <p class="c1"><span class="c3">}</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span class="c3">&#8230;</span></p>
+    <p class="c1 c2"><span class="c3"></span></p>
+    <p class="c1"><span class="c11">v</span><span class="c3">ar alttext = $(this).attr(&#8220;alt&#8221;)</span></p>
+    <p class="c1"><span class="c0">&#8230;</span></p>
+    <p class="c1"><span class="c11">var srcofimg = $(this).attr(&#8220;src&#8221;)</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>At the end of this step, your extension should read not only text, but also the alt text of images when available, or the URL of them if it&#8217;s not.</span></p>
+  </div>
+  <div style="height: 30px;"></div>
+  <hr>
+  <p><span>This page and contents are copyright Jeffrey P. Bigham except where noted.<br></span></p>
+</body>
+</html>
