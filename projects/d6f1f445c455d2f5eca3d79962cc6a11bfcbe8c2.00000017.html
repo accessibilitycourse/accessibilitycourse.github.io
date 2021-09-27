@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>project2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <style>
+  img {
+  border: 2px solid #CCC;
+  margin: 2em !important;
+  }
+  body {
+  padding: 5em 1em !important;
+  }
+  </style>
+  <style type="text/css">
+  .lst-kix_dg276r1impi7-1>li:before{content:"" counter(lst-ctn-kix_dg276r1impi7-1,lower-latin) ". "}.lst-kix_dg276r1impi7-6>li{counter-increment:lst-ctn-kix_dg276r1impi7-6}.lst-kix_dg276r1impi7-3>li:before{content:"" counter(lst-ctn-kix_dg276r1impi7-3,decimal) ". "}ol.lst-kix_dg276r1impi7-6.start{counter-reset:lst-ctn-kix_dg276r1impi7-6 0}.lst-kix_dg276r1impi7-0>li:before{content:"" counter(lst-ctn-kix_dg276r1impi7-0,decimal) ". "}ol.lst-kix_dg276r1impi7-4.start{counter-reset:lst-ctn-kix_dg276r1impi7-4 0}.lst-kix_dg276r1impi7-4>li:before{content:"" counter(lst-ctn-kix_dg276r1impi7-4,lower-latin) ". "}.lst-kix_dg276r1impi7-5>li:before{content:"" counter(lst-ctn-kix_dg276r1impi7-5,lower-roman) ". "}.lst-kix_dg276r1impi7-0>li{counter-increment:lst-ctn-kix_dg276r1impi7-0}.lst-kix_dg276r1impi7-6>li:before{content:"" counter(lst-ctn-kix_dg276r1impi7-6,decimal) ". "}.lst-kix_dg276r1impi7-3>li{counter-increment:lst-ctn-kix_dg276r1impi7-3}ol.lst-kix_dg276r1impi7-2.start{counter-reset:lst-ctn-kix_dg276r1impi7-2 0}.lst-kix_dg276r1impi7-8>li:before{content:"" counter(lst-ctn-kix_dg276r1impi7-8,lower-roman) ". "}ol.lst-kix_dg276r1impi7-8.start{counter-reset:lst-ctn-kix_dg276r1impi7-8 0}.lst-kix_dg276r1impi7-7>li:before{content:"" counter(lst-ctn-kix_dg276r1impi7-7,lower-latin) ". "}.lst-kix_dg276r1impi7-5>li{counter-increment:lst-ctn-kix_dg276r1impi7-5}ol.lst-kix_dg276r1impi7-0.start{counter-reset:lst-ctn-kix_dg276r1impi7-0 0}.lst-kix_dg276r1impi7-2>li{counter-increment:lst-ctn-kix_dg276r1impi7-2}ol.lst-kix_dg276r1impi7-1{list-style-type:none}ol.lst-kix_dg276r1impi7-5.start{counter-reset:lst-ctn-kix_dg276r1impi7-5 0}ol.lst-kix_dg276r1impi7-0{list-style-type:none}ol.lst-kix_dg276r1impi7-8{list-style-type:none}ol.lst-kix_dg276r1impi7-7{list-style-type:none}ol.lst-kix_dg276r1impi7-7.start{counter-reset:lst-ctn-kix_dg276r1impi7-7 0}.lst-kix_dg276r1impi7-8>li{counter-increment:lst-ctn-kix_dg276r1impi7-8}ol.lst-kix_dg276r1impi7-6{list-style-type:none}ol.lst-kix_dg276r1impi7-5{list-style-type:none}ol.lst-kix_dg276r1impi7-4{list-style-type:none}ol.lst-kix_dg276r1impi7-3{list-style-type:none}ol.lst-kix_dg276r1impi7-2{list-style-type:none}ol.lst-kix_dg276r1impi7-3.start{counter-reset:lst-ctn-kix_dg276r1impi7-3 0}.lst-kix_dg276r1impi7-4>li{counter-increment:lst-ctn-kix_dg276r1impi7-4}.lst-kix_dg276r1impi7-1>li{counter-increment:lst-ctn-kix_dg276r1impi7-1}.lst-kix_dg276r1impi7-7>li{counter-increment:lst-ctn-kix_dg276r1impi7-7}ol.lst-kix_dg276r1impi7-1.start{counter-reset:lst-ctn-kix_dg276r1impi7-1 0}.lst-kix_dg276r1impi7-2>li:before{content:"" counter(lst-ctn-kix_dg276r1impi7-2,lower-roman) ". "}ol{margin:0;padding:0}table td,table th{padding:0}.c19{margin-left:36pt;padding-top:3pt;padding-left:0pt;padding-bottom:4pt;line-height:1.0;orphans:2;widows:2;text-align:left}.c8{margin-left:36pt;padding-top:3pt;padding-left:0pt;padding-bottom:0pt;line-height:1.0;orphans:2;widows:2;text-align:left}.c4{color:#1155cc;font-weight:400;text-decoration:underline;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c12{padding-top:10pt;padding-bottom:0pt;line-height:1.0;orphans:2;widows:2;text-align:left;height:11pt}.c5{color:#434343;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Arial";font-style:normal}.c14{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:"Arial";font-style:normal}.c1{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left;height:11pt}.c0{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c11{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:16pt;font-family:"Arial";font-style:normal}.c2{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c16{padding-top:16pt;padding-bottom:4pt;line-height:1.15;page-break-after:avoid;text-align:left}.c9{padding-top:18pt;padding-bottom:6pt;line-height:1.15;page-break-after:avoid;text-align:left}.c6{padding-top:0pt;padding-bottom:3pt;line-height:1.15;page-break-after:avoid;text-align:left}.c13{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c15{padding:0;margin:0}.c3{color:inherit;text-decoration:inherit}.c7{color:#1155cc;text-decoration:underline}.c10{font-style:italic}.c18{color:#ff0000}.c17{height:14pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}
+  </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <a href="/">Home</a>:: <a href="/syllabus.html">Syllabus</a>
+    </ul>
+  </div>
+  <div class="maincontent">
+    <p class="c6 title" id="h.grclj3aowq3l"><span class="c14">Project 2: &#160;Build An Accessible Web Page</span></p>
+    <p class="c2"><span class="c10">Due: &#160;Thursday, September, 14th &#160;*</span><span class="c10 c18">in class</span><span class="c10">*</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">In this week&#8217;s project, you will create an accessible web page. This web page you&#8217;ll start with has been constructed to allow you practice with a wide variety of different kinds of web content, and thus practice making a wide variety of web page content accessible. Another way of saying this is that the web page you&#8217;ll start with is absolutely dreadful, but Jeff has seen all of the problems it contains on web pages not only &#8220;in the wild&#8221; but in accessibility evaluations he&#8217;s participated in.<br>
+    <br>
+    You will explore not only making content that is accessible, but also explore how to use tools to automatically assess the accessibility of web pages. Determining whether a web page is accessible is quite difficult to do automatically, and so part of the goal of this exercise is to become familiar with some of those limitations.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">Below is a list of what you&#8217;ll need to do for Project 2. Rather than a formal write-up, please keep a &#8220;lab notebook&#8221; that includes the results from the activities below. You&#8217;ll turn in that, along with your final web page. You&#8217;ll also discuss your web page, what was inaccessible about its original form, and what you did to make it accessible in class.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <h2 class="c9" id="h.lc3jpexpv5ku"><span class="c11">Web Page Overview</span></h2>
+    <p class="c2"><span>The purpose of this web page is to advertise accessibility and provide some hints for people who want to get started. You&#8217;ll make the basic web page accessible, make its embedded video accessible, etc. The page is a bit ridiculous because of how many different kinds of content it contains all on one page, but is formed of fairly common components.<br>
+    <br>
+    The base web page (HTML, CSS, and Javascript) are located in the</span> <span class="c7"><a class="c3" href="/projects/project2-template/project2-template.zip">base-webpage.zip</a></span><span class="c0">.<br>
+    <br>
+    The initial state looks visually like this:</span></p>
+    <p class="c2"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 338.58px; height: 490.50px;"><img alt="" src="https://lh4.googleusercontent.com/jcc6rmzF21VXZkwQ1RCOXShfjpZoUp9tFbXQlpqbERw3prwMLhOSIXCD7XjInJ1g3j8NpmcmR9XwnmVutxyhB7Blq76WRdJ0QPb89aXKdgP-e7q_1Y8zQopT50h-LgbglQ" style="width: 338.58px; height: 490.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="Accessibility Overview web page, contains a video, some links, a form, etc."></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span>The final state of the web page will look visually similar, but it will be much more accessible! &#160;Your final web page might look a bit different. Please feel free to deviate from the style here if you need to do so for better accessibility or usability.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <h2 class="c9" id="h.sg8kz49c9t7b"><span class="c11">Exploring Automatic Accessibility</span></h2>
+    <p class="c2"><span>Before getting started in your manual evaluation of the accessibility of this page, use one of the many (free) accessibility evaluation tools to get a quick sense of obvious problems that should be fixed. There are many such tools, and you&#8217;re free to use whatever one you want, but a good option is</span> <span class="c7">WAVE</span><span class="c0">.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span>Copy &amp; paste the output from WAVE (or your preferred tool) into your lab notebook. Then write a short description of the main problems that the tool was able to discover.</span></p>
+    <h2 class="c9" id="h.nygm7uk6j59l"><span class="c11"><br>
+    Making the Page Accessible</span></h2>
+    <p class="c2"><span class="c0">To make the web page accessible, please pay attention to the following points. To receive an A, find and fix at least one problem in each category below; if you prefer a B, complete something from all but 1 category; for a C, complete something in all but 3 categories.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span>Record in your lab notebook a description of each problem, your estimate of the severity of the problem, how you fixed it, and whether or not it was detected by the automatic accessibility evaluator you tried in the previous step. You might optionally also look up what guideline it breaks in</span> <span class="c7">WCAG 2.0</span><span class="c0">, and note the level of compliance it corresponds to (A, AA, AAA).</span></p>
+    <p class="c12"><span class="c4"></span></p>
+    <ol class="c15 lst-kix_dg276r1impi7-0 start" start="1">
+      <li class="c8"><span class="c7"><a class="c3" href="#h.4wlr2vglv7a8">Headings and Landmarks</a></span></li>
+      <li class="c8"><span class="c7"><a class="c3" href="#h.we34xdfzmg85">Good Alternative Text for Images</a></span></li>
+      <li class="c8"><span class="c7"><a class="c3" href="#h.h2tpykvzeys4">Form Labels</a></span></li>
+      <li class="c8"><span class="c7"><a class="c3" href="#h.q894i9fjci5n">Form Widgets without Semantics</a></span></li>
+      <li class="c8"><span class="c7"><a class="c3" href="#h.tmffv191qv8">Video Captions</a></span></li>
+      <li class="c8"><span class="c7"><a class="c3" href="#h.m0yvgjju94t4">Audio Descriptions</a></span></li>
+      <li class="c8"><span class="c7"><a class="c3" href="#h.gc0amsuy8sbj">Tab Order &amp; Visible Focus</a></span></li>
+      <li class="c8"><span class="c7"><a class="c3" href="#h.z63p554snfgt">Color Contrast</a></span></li>
+      <li class="c8"><span class="c7"><a class="c3" href="#h.nchb6ub7073l">Keyboard Access</a></span></li>
+      <li class="c19"><span class="c7"><a class="c3" href="#h.8ux3ckvqukoq">Information Conveyed Only via Color</a></span></li>
+    </ol>
+    <p class="c1"><span class="c0"></span></p>
+    <h3 class="c16" id="h.4wlr2vglv7a8"><span class="c5">Headings and Landmarks</span></h3>
+    <p class="c2"><span>Headings and landmarks provide an outline for the web. This helps in reading, but also helps in efficiently navigating the page if you&#8217;re using a screen reader. Headings are the &lt;h1&gt; through &lt;h6&gt; HTML tags.<br>
+    <br>
+    You can read more about headings and other elements for providing semantics at this WebAim article on</span> <span class="c7">Semantic Structure</span><span>.</span></p>
+    <h3 class="c16" id="h.we34xdfzmg85"><span class="c5">Good Alternative Text for Images</span></h3>
+    <p class="c2"><span>Visual information have an alternative text form so that users who can&#8217;t see the content can still access that information. While somewhat intuitive, deciding on good alternative text and which images need alternative text can be a little tricky. When in doubt, label an image.<br>
+    <br>
+    You can read more about images and alternative descriptions at this WebAim article on</span> <span class="c7">Alternative Text</span><span>.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <h3 class="c16" id="h.h2tpykvzeys4"><span class="c5">Form Labels</span></h3>
+    <p class="c2"><span>Providing labels for form fields makes them easier to understand for someone who is not viewing the visual layout of the page, or is not viewing it in the way it was designed for (</span><span class="c10">e.g.,</span> <span class="c0">at a different level of magnification).</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span>You can read more about form labels, including what makes a good form label and who to assign them on this WebAim article on</span> <span class="c7">Creating Accessible Forms</span><span>.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <h3 class="c16 c17" id="h.4o2c58516o59"><span class="c5"></span></h3>
+    <h3 class="c16" id="h.q894i9fjci5n"><span class="c5"><br>
+    Form Widgets without Semantics</span></h3>
+    <p class="c2"><span class="c0">Dynamic HTML and Javascript allow new kinds of elements to be created from scratch using other HTML elements as building blocks. For example, if you take a &lt;DIV&gt;, visually style it to look like a button, and then add some Javascript to it so it responds like a button when pressed, it&#8217;s essentially a button. Except, if it&#8217;s not been coded to advertise that it&#8217;s a button, a screen reader won&#8217;t know what it is. If it&#8217;s instead a more rich control, it also may need to convey its state. For example, a radio button needs to convey whether it&#8217;s checked and which radio button family it&#8217;s part of.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span>The W3C offers</span><span class="c7">&#160;examples of using ARIA</span><span>&#160;to make such hand-crafted widgets accessible.</span></p>
+    <h3 class="c16" id="h.tmffv191qv8"><span class="c5">Video Captions</span></h3>
+    <p class="c2"><span>A deaf or hard of hearing person cannot listen to video content without a suitable visual substitute. One way to do that is to provide captioning for the video, which means creating a text alternative for the speech in the video and allowing it to be displayed.<br>
+    <br>
+    Different video players have different ways of allowing you to provide captions. One relatively easy way to create captions is to upload your video to YouTube,</span> <span class="c7">request it automatically caption your video</span><span>, and then</span> <span class="c7">edit those captions</span><span>. Once you do this, &#160;you can either keep your video on YouTube, and use the embedded player to put the content on your own site. Or, you can</span> <span class="c7">download the caption file</span><span>, and put it into your own player. For example, the HTML5 &lt;video&gt; tag</span> <span class="c7">accepts captioning files</span><span>, and is pretty easy to use once you have created the captioning.</span></p>
+    <h3 class="c16" id="h.m0yvgjju94t4"><span class="c5">Audio Descriptions</span></h3>
+    <p class="c2"><span class="c0">Audio descriptions are the video equivalent of alternative text for images. Oftentimes, visual content in an image is not mentioned in the audio track. In that case, you&#8217;ll need to provide information about the visuals in the audio track so that people who can&#8217;t see the visuals have access to them. This can be tricky, mostly because of timing -- it can be really hard to fit in audio descriptions into natural pauses.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span>You can add video descriptions in a few different ways. One is to use video editing software, such as Adobe Premiere or iMovie, to add a new audio track to the video that contains the descriptions. Another way is to upload your video to YouTube, and then use the</span> <span class="c7">YouDescribe</span><span>&#160;service to add the alternative descriptions. For some reason, it&#8217;s a little tricky to find the video you want to describe from the YouDescribe interface -- the best approach I&#8217;ve found is to post your video publicly on YouTube, then search for your username, which should display all of your public videos.<br>
+    <br>
+    Regardless of tool used, you&#8217;ll want to think about what you&#8217;ll need to describe, versus what doesn&#8217;t need visual description. For instance, if a person is talking, there&#8217;s probably no reason to say that there is a person on-screen. But, you might want to describe facial expressions, or mention someone sneaking onto the screen.<br>
+    <br>
+    Here&#8217;s a video describing</span> <span class="c7">how to create audio descriptions using iMovie</span><span>, including a number of useful tidbits about what goes into a good audio description. Here&#8217;s a short</span> <span class="c7">professionally-created video that has been audio described</span><span>. You might also check out your favorite movie&#8217;s special features to see if it has an audio description track that you can turn on. Many popular movies have these nowadays!</span></p>
+    <h3 class="c16" id="h.gc0amsuy8sbj"><span class="c5">Tab Order &amp; Visible Focus</span></h3>
+    <p class="c2"><span>A proper tab order means that as you move through the page with the TAB and SHIFT-TAB keys, a logical order is followed. This is the natural result in simple pages, but as content can be placed pretty much wherever you want. And, as web pages are increasingly formed by brining in content for various sources, sometimes the result is a non-sensical order.<br>
+    <br>
+    Another element of this is that to be able to effectively &#8220;tab through&#8221; a web page, you need to be able to see what element currently has focus. Setting the outline property to &#8220;none&#8221; in CSS, or making the change on focus too difficult to see, can make doing so very hard. The focused element on a page should be easily visible.<br>
+    <br>
+    WebAim has more about these issues in its</span> <span class="c7">Keyboard Accessibility</span><span>&#160;page.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <h3 class="c16" id="h.z63p554snfgt"><span class="c5">Color Contrast</span></h3>
+    <p class="c2"><span>The foreground and background need to have sufficient contrast in order to be possible to see. WCAG 2.0 provides very specific guidance on acceptable contrast levels, but you might wonder how you can test that? &#160;Fortunately, WebAim has a</span> <span class="c7">free and easy contrast checker</span><span class="c0">.</span></p>
+    <h3 class="c16" id="h.nchb6ub7073l"><span class="c5">Keyboard Access</span></h3>
+    <p class="c2"><span class="c0">All functions of the page should be possible to use with the keyboard. This is important for people who can&#8217;t use the mouse, or are using some other input device that effectively acts as a keyboard. Most &#8220;soft keyboards&#8221; effectively act as a keyboard as far as the web page is concerned. Software keyboards take input from switches, head mouses, speech, eye gaze, etc., and turn it into key presses. So, if a page doesn&#8217;t work for a keyboard, it won&#8217;t work for these inputs either.<br>
+    <br>
+    We already covered tab order and visible focus in a previous item, so for this item you&#8217;re looking to make sure that all functionality is possible without the mouse, i.e., can you press all the buttons, follow all the links, interact with form controls, etc.</span></p>
+    <h3 class="c16" id="h.8ux3ckvqukoq"><span class="c5">Information Conveyed Only via Color</span></h3>
+    <p class="c2"><span>Information conveyed only in color is not accessible to people who cannot see or who have limited color vision. As a result, color should be supplemented with other content that is more semantic in order to make it accessible. Avoid such things as, &#8220;the items in blue are required&#8221;, or denoting links only by their color (and not by some other font decoration, such as underlining).<br>
+    <br>
+    You can learn more about color blindness and other related issues at WebAim&#8217;s article on</span> <span class="c7">Color-blindness</span><span class="c0">.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <h2 class="c9" id="h.dmxe3kunyzq7"><span class="c11">Project Turnin and Grading</span></h2>
+    <p class="c2"><span class="c0">You have each been added to a shared folder on &#8220;Box&#8221; with your Andrew ID as the folder name. You should have received this invitation to &lt;your username&gt;@andrew.cmu.edu. Please put your &#8220;lab notebook&#8221; document, your fixed web page, and anything else relevant to the project in the appropriate folder within the shared folder. You should see a folder labeled p2 through p12.<br>
+    <br>
+    Your project will be graded in class with a partner. You will be asked to describe the elements you completed, and your partner will submit your grade via a Google Form in class. Then, you&#8217;ll switch and grade the other person&#8217;s.</span></p>
+  </div>
+  <div style="height: 30px;"></div>
+  <hr>
+  <p><span>This page and contents are copyright Jeffrey P. Bigham except where noted.<br></span></p>
+</body>
+</html>
