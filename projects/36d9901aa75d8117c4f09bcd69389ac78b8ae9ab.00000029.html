@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>project8</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <style>
+  img {
+  border: 2px solid #CCC;
+  margin: 2em !important;
+  }
+  body {
+  padding: 5em 1em !important;
+  }
+  </style>
+  <style type="text/css">
+  ol.lst-kix_6pgysrxfehwz-4.start{counter-reset:lst-ctn-kix_6pgysrxfehwz-4 0}.lst-kix_6pgysrxfehwz-8>li{counter-increment:lst-ctn-kix_6pgysrxfehwz-8}.lst-kix_6pgysrxfehwz-2>li{counter-increment:lst-ctn-kix_6pgysrxfehwz-2}ol.lst-kix_6pgysrxfehwz-7.start{counter-reset:lst-ctn-kix_6pgysrxfehwz-7 0}ol.lst-kix_6pgysrxfehwz-8.start{counter-reset:lst-ctn-kix_6pgysrxfehwz-8 0}.lst-kix_21pnktrgq2bt-1>li:before{content:"\0025cb  "}ol.lst-kix_6pgysrxfehwz-1.start{counter-reset:lst-ctn-kix_6pgysrxfehwz-1 0}.lst-kix_21pnktrgq2bt-0>li:before{content:"\0025cf  "}ol.lst-kix_6pgysrxfehwz-5.start{counter-reset:lst-ctn-kix_6pgysrxfehwz-5 0}.lst-kix_6pgysrxfehwz-1>li{counter-increment:lst-ctn-kix_6pgysrxfehwz-1}.lst-kix_6pgysrxfehwz-7>li{counter-increment:lst-ctn-kix_6pgysrxfehwz-7}.lst-kix_6pgysrxfehwz-4>li{counter-increment:lst-ctn-kix_6pgysrxfehwz-4}.lst-kix_6pgysrxfehwz-4>li:before{content:"" counter(lst-ctn-kix_6pgysrxfehwz-4,lower-latin) ". "}.lst-kix_6pgysrxfehwz-3>li:before{content:"" counter(lst-ctn-kix_6pgysrxfehwz-3,decimal) ". "}.lst-kix_6pgysrxfehwz-5>li:before{content:"" counter(lst-ctn-kix_6pgysrxfehwz-5,lower-roman) ". "}ol.lst-kix_6pgysrxfehwz-2.start{counter-reset:lst-ctn-kix_6pgysrxfehwz-2 0}.lst-kix_6pgysrxfehwz-0>li:before{content:"" counter(lst-ctn-kix_6pgysrxfehwz-0,decimal) ". "}ol.lst-kix_6pgysrxfehwz-6{list-style-type:none}.lst-kix_6pgysrxfehwz-8>li:before{content:"" counter(lst-ctn-kix_6pgysrxfehwz-8,lower-roman) ". "}ol.lst-kix_6pgysrxfehwz-7{list-style-type:none}ol.lst-kix_6pgysrxfehwz-4{list-style-type:none}.lst-kix_6pgysrxfehwz-5>li{counter-increment:lst-ctn-kix_6pgysrxfehwz-5}.lst-kix_6pgysrxfehwz-7>li:before{content:"" counter(lst-ctn-kix_6pgysrxfehwz-7,lower-latin) ". "}ol.lst-kix_6pgysrxfehwz-5{list-style-type:none}ol.lst-kix_6pgysrxfehwz-2{list-style-type:none}.lst-kix_6pgysrxfehwz-6>li:before{content:"" counter(lst-ctn-kix_6pgysrxfehwz-6,decimal) ". "}ol.lst-kix_6pgysrxfehwz-3{list-style-type:none}ol.lst-kix_6pgysrxfehwz-0{list-style-type:none}ol.lst-kix_6pgysrxfehwz-1{list-style-type:none}.lst-kix_6pgysrxfehwz-1>li:before{content:"" counter(lst-ctn-kix_6pgysrxfehwz-1,lower-latin) ". "}.lst-kix_21pnktrgq2bt-2>li:before{content:"\0025a0  "}.lst-kix_6pgysrxfehwz-2>li:before{content:"" counter(lst-ctn-kix_6pgysrxfehwz-2,lower-roman) ". "}.lst-kix_21pnktrgq2bt-3>li:before{content:"\0025cf  "}.lst-kix_6pgysrxfehwz-6>li{counter-increment:lst-ctn-kix_6pgysrxfehwz-6}.lst-kix_6pgysrxfehwz-3>li{counter-increment:lst-ctn-kix_6pgysrxfehwz-3}.lst-kix_21pnktrgq2bt-4>li:before{content:"\0025cb  "}.lst-kix_21pnktrgq2bt-6>li:before{content:"\0025cf  "}.lst-kix_21pnktrgq2bt-5>li:before{content:"\0025a0  "}.lst-kix_21pnktrgq2bt-8>li:before{content:"\0025a0  "}ul.lst-kix_21pnktrgq2bt-1{list-style-type:none}ul.lst-kix_21pnktrgq2bt-2{list-style-type:none}.lst-kix_6pgysrxfehwz-0>li{counter-increment:lst-ctn-kix_6pgysrxfehwz-0}ul.lst-kix_21pnktrgq2bt-0{list-style-type:none}.lst-kix_21pnktrgq2bt-7>li:before{content:"\0025cb  "}ul.lst-kix_21pnktrgq2bt-5{list-style-type:none}ul.lst-kix_21pnktrgq2bt-6{list-style-type:none}ol.lst-kix_6pgysrxfehwz-6.start{counter-reset:lst-ctn-kix_6pgysrxfehwz-6 0}ul.lst-kix_21pnktrgq2bt-3{list-style-type:none}ol.lst-kix_6pgysrxfehwz-0.start{counter-reset:lst-ctn-kix_6pgysrxfehwz-0 0}ul.lst-kix_21pnktrgq2bt-4{list-style-type:none}ul.lst-kix_21pnktrgq2bt-7{list-style-type:none}ol.lst-kix_6pgysrxfehwz-8{list-style-type:none}ul.lst-kix_21pnktrgq2bt-8{list-style-type:none}ol.lst-kix_6pgysrxfehwz-3.start{counter-reset:lst-ctn-kix_6pgysrxfehwz-3 0}ol{margin:0;padding:0}table td,table th{padding:0}.c11{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Courier New";font-style:normal}.c15{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:16pt;font-family:"Arial";font-style:normal}.c0{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c18{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:"Arial";font-style:normal}.c6{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:italic}.c10{color:#434343;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Arial";font-style:normal}.c7{color:#000000;font-weight:400;text-decoration:line-through;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c1{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c20{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-family:"Arial";font-style:normal}.c5{padding-top:16pt;padding-bottom:4pt;line-height:1.15;page-break-after:avoid;text-align:left}.c16{padding-top:0pt;padding-bottom:3pt;line-height:1.15;page-break-after:avoid;text-align:left}.c4{padding-top:18pt;padding-bottom:6pt;line-height:1.15;page-break-after:avoid;text-align:left}.c19{font-size:10pt;font-family:"Courier New";font-weight:400}.c13{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c2{margin-left:36pt;padding-left:0pt}.c14{padding:0;margin:0}.c9{color:#1155cc;text-decoration:underline}.c8{color:inherit;text-decoration:inherit}.c17{font-style:italic}.c3{height:11pt}.c21{color:#ff0000}.c12{font-size:14pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}
+  </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <a href="/">Home</a>:: <a href="/syllabus.html">Syllabus</a>
+    </ul>
+  </div>
+  <div class="maincontent">
+    <p class="c16 title" id="h.pa3nzyasjf4j"><span>Project 8: &#160;Web Browsing By Voice</span></p>
+    <p class="c1"><span class="c17">Due: Thursday, November 30th &#160;*</span><span class="c17 c21">in class</span><span class="c6">*</span></p>
+    <p class="c1 c3"><span class="c6"></span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">In this project, you&#8217;ll write a script that enables speech control of a web page on which it is included. It&#8217;s a little different this time because we will not be writing an extension. The reason is that due to permission restrictions, we can&#8217;t easily access the microphone (and, thus, speech recognition from an extension).<br>
+    <br>
+    You can, however, access speech recognition relatively easily from a web page hosted on a secure server.<br></span></p>
+    <h2 class="c4" id="h.rveuj376fuz9"><span class="c15"><br>
+    Hosting A Page On A Secure Server</span></h2>
+    <p class="c1"><span class="c0">We suggest hosting your HITs on Github Pages. The reason is that it&#8217;s free, relatively easy, and supports https, which Mechanical Turk requires. It&#8217;s not fancy web hosting. You&#8217;ll have ~zero control over the backend. But, as we&#8217;ll see, almost everything we&#8217;ll be doing is on the front-end anyway.</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1"><span>There&#8217;s a good walk-through of how to do this on the Github Pages page:<br></span><span class="c9 c12">https://pages.github.com</span></p>
+    <p class="c1"><span class="c19"><br>
+    <br></span> <span>After these commands, I could visit:<br></span><span class="c9">https://jbigham.github.io/</span><span class="c0">&#160;and see a web site that I created:</span></p>
+    <p class="c1"><span style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 2.67px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 487.97px; height: 344.50px;"><img alt="" src="https://lh6.googleusercontent.com/M1yt0a3TQr8O1EmcpmIUF4scDvnEkvQNj97grP124xeFosyLJEdDWSaeArhYgd2OWUtVLGqknhy1mAc-ZJgi13_OP9NjuqBSaXZt-QCBuaVPdtwxFmjdbNIN3MDrEfoRwA" style="width: 487.97px; height: 344.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+    <p class="c1 c3"><span class="c7"></span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Adding files to your Github pages site is as simple at adding, committing, and pushing using git.</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <h2 class="c4" id="h.jk97mqcw7iix"><span class="c15">Recognizing Speech</span></h2>
+    <p class="c1"><span class="c0">A great thing about modern web browsers it that they include speech recognition services that you can access using Javascript, either directly from a web page or from a browser extension.</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">The the following to trigger the speech recognizer when the user presses a button on any web page that they visit (for instance, the spacebar) --</span></p>
+    <p class="c1"><span class="c9">A Guide to the Chrome Speech API</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1"><span>Insert a little bar at the bottom of each page that is loaded, and display the recognized speech to the user.</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <h2 class="c4" id="h.az8i9knqdo9b"><span class="c15">Recognizing Commands</span></h2>
+    <p class="c1"><span class="c0">Your extension will recognize three different actions (verbs):</span></p>
+    <ol class="c14 lst-kix_6pgysrxfehwz-0 start" start="1">
+      <li class="c1 c2"><span class="c0">click [phrase describing the thing to click on]</span></li>
+      <li class="c1 c2"><span class="c0">enter [text to enter]</span></li>
+      <li class="c1 c2"><span class="c0">scroll [down/up]</span></li>
+    </ol>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1"><span>To figure out which command the user said, you&#8217;ll use a</span> <span class="c9">regular expression</span><span class="c0">.</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1"><span>The</span> <span class="c9">code that we wrote in class for regular expressions</span><span class="c0">.</span></p>
+    <h3 class="c5" id="h.cdf9t0buud14"><span class="c10">Click [phrase describing the thing to click on]</span></h3>
+    <p class="c1"><span class="c0">One of the challenges in clicking something is finding the element that was mentioned. Fortunately, only some elements on a page can be clicked, and we can go through and manually find those that match the phrase that was mentioned.</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1"><span>You can start with something like this:<br></span><span class="c11">$(&#8220;input,a&#8221;).each(function() {</span></p>
+    <p class="c1"><span class="c11">&#160; // is this the element that should be clicked?</span></p>
+    <p class="c1"><span class="c11">});</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <h3 class="c5" id="h.j5k8h83s2r72"><span class="c10">Enter [text to enter]</span></h3>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <p class="c1"><span>Similar to the last assignment, keep track of the last item that accepts text that has been clicked, and enter text into that item when requested.</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <h3 class="c5" id="h.vuteev5m59ty"><span class="c10">Scroll [down/up]</span></h3>
+    <p class="c1"><span class="c0">Scroll up or down as requested.</span></p>
+    <h3 class="c5" id="h.e1ld2rs3n1td"><span class="c10">Other</span></h3>
+    <p class="c1"><span class="c0">People will always request things that your system can&#8217;t handle, or have their valid commands garbled by the speech recognizer. In that case, given them an error.</span></p>
+    <p class="c1 c3"><span class="c0"></span></p>
+    <h2 class="c4" id="h.ky69dwrhvesw"><span class="c15">Grading</span></h2>
+    <p class="c1"><span class="c0">Main components of our grading will be:<br></span></p>
+    <p class="c1"><span class="c0">Using the appropriate keyboard commands, does the following happen:</span></p>
+    <ul class="c14 lst-kix_21pnktrgq2bt-0 start">
+      <li class="c1 c2"><span class="c0">Upon clicking a button, allows user to give a speech command</span></li>
+      <li class="c1 c2"><span class="c0">If the command is to click, it clicks</span></li>
+      <li class="c1 c2"><span class="c0">If the command is to enter text, it enters text</span></li>
+      <li class="c1 c2"><span class="c0">If the command is to scroll, it scrolls</span></li>
+      <li class="c1 c2"><span class="c0">If the command is something else, it displays a message saying it did not understand<br></span></li>
+    </ul>
+  </div>
+  <div style="height: 30px;"></div>
+  <hr>
+  <p><span>This page and contents are copyright Jeffrey P. Bigham except where noted.<br></span></p>
+</body>
+</html>
